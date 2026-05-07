@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage';
 import ProgramsPage from './pages/ProgramsPage';
 import TestimonialPage from './pages/TestimonialPage';
 import StoriesPage from './pages/StoriesPage';
+import LanguageSwitcher from './components/LanguageSwitcher';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -37,6 +38,7 @@ function App() {
     <div className="flex flex-col min-h-screen font-sans text-[#333333] bg-[#fdfdfd] overflow-x-hidden">
       <ScrollToTop />
       <Navbar />
+      <LanguageSwitcher />
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<HomePage />} />

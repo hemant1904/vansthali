@@ -18,32 +18,14 @@
     body {
       top: 0 !important;
     }
-    /* Style the translate dropdown to look modern */
-    .goog-te-gadget-simple {
-      background-color: #f1f8e9 !important;
-      border: 1px solid #c8e6c9 !important;
-      border-radius: 20px !important;
-      padding: 4px 10px !important;
-      font-family: 'Geist Variable', sans-serif !important;
-      font-size: 14px !important;
-      display: flex !important;
-      align-items: center !important;
-    }
-    .goog-te-gadget-simple .goog-te-menu-value {
-      color: #2e7d32 !important;
-      font-weight: 600 !important;
-    }
-    .goog-te-gadget-simple img {
-      display: none !important;
-    }
   </style>
 </head>
 
 <body>
   <div id="root"></div>
 
-  <!-- Google Translate Widget (Floating) -->
-  <div id="google_translate_element" style="position: fixed; bottom: 20px; left: 20px; z-index: 9999; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
+  <!-- Google Translate Widget (Hidden) -->
+  <div id="google_translate_element" style="display: none;"></div>
   
   <script type="text/javascript">
     function googleTranslateElementInit() {

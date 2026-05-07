@@ -136,11 +136,11 @@ const StoriesPage = () => {
         style={{ backgroundImage: "url('/assets/images/stories_backgroundimage.png')" }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative text-center px-6 max-w-[900px] z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-center">
+        <div className="relative text-center px-4 md:px-6 max-w-[900px] z-10">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight text-center">
             Stories of Change
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-[850px] mx-auto">
+          <p className="text-base md:text-xl text-gray-200 max-w-[850px] mx-auto px-2">
             Real journeys of courage, growth, and transformation—driven by education, opportunity, and the strength of rural communities.
           </p>
         </div>

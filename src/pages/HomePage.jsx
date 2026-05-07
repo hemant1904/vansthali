@@ -41,24 +41,19 @@ const HeroSlider = () => {
     <div className="absolute inset-0 bg-black/55"></div>
 
     {/* CONTENT */}
-    <div className="relative z-10 max-w-[900px] px-6">
-
-
-
+    <div className="relative z-10 max-w-[900px] px-4 md:px-6">
       <h1 className="text-white font-bold text-center leading-tight 
-               text-[2rem] sm:text-[2.4rem] md:text-[3.6rem] lg:text-[4rem] 
+               text-[2.2rem] sm:text-[2.6rem] md:text-[3.6rem] lg:text-[4rem] 
                max-w-[1200px] mx-auto mb-6">
-
         <span className="block">Empowering Rural Voice &</span>
         <span className="block">
           Transforming Communities
         </span>
-
       </h1>
 
       <p className="text-gray-200 
-              text-[1.1rem] md:text-[1.35rem] lg:text-[1.4rem] 
-              leading-relaxed mb-8 max-w-[750px] mx-auto text-center">
+              text-[1rem] md:text-[1.35rem] lg:text-[1.4rem] 
+              leading-relaxed mb-8 max-w-[750px] mx-auto text-center px-2">
         Fostering sustainable rural development through education, healthcare, and skill empowerment.
       </p>
 
@@ -71,9 +66,9 @@ const HeroSlider = () => {
           rel="noopener noreferrer"
           sx={{
             borderRadius: '999px',
-            px: '38px',
-            py: '14px',
-            fontSize: '1rem',
+            px: { xs: '30px', md: '38px' },
+            py: { xs: '12px', md: '14px' },
+            fontSize: { xs: '0.9rem', md: '1rem' },
             fontWeight: 600,
             backgroundColor: '#2e7d32',
             textTransform: 'none',
@@ -88,7 +83,6 @@ const HeroSlider = () => {
           Get Involved
         </Button>
       </div>
-
     </div>
   </section>
 
@@ -159,32 +153,32 @@ const Counter = ({ target, duration = 2000 }) => {
 
 const StatsSection = () => {
   return (
-    <section className="w-full max-w-[1200px] mx-auto px-8 mt-10 mb-10" id="impact">
-      <div className="bg-primary text-white py-16 relative z-[2] rounded-[12px] shadow-lg">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          <div className="stat-item">
-            <h3 className="text-[3rem] font-extrabold mb-2">
+    <section className="w-full max-w-[1200px] mx-auto px-4 sm:px-8 mt-10 mb-10" id="impact">
+      <div className="bg-primary text-white py-12 md:py-16 relative z-[2] rounded-[12px] shadow-lg">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-4 text-center">
+          <div className="stat-item px-2">
+            <h3 className="text-[2.2rem] md:text-[3rem] font-extrabold mb-1 md:mb-2">
               <Counter target="100+" />
             </h3>
-            <p className="text-[1.1rem] opacity-90">Villages Impacted</p>
+            <p className="text-[0.9rem] md:text-[1.1rem] opacity-90 leading-tight">Villages Impacted</p>
           </div>
-          <div className="stat-item">
-            <h3 className="text-[3rem] font-extrabold mb-2">
+          <div className="stat-item px-2">
+            <h3 className="text-[2.2rem] md:text-[3rem] font-extrabold mb-1 md:mb-2">
               <Counter target="20k+" />
             </h3>
-            <p className="text-[1.1rem] opacity-90">Women Empowered</p>
+            <p className="text-[0.9rem] md:text-[1.1rem] opacity-90 leading-tight">Women Empowered</p>
           </div>
-          <div className="stat-item">
-            <h3 className="text-[3rem] font-extrabold mb-2">
+          <div className="stat-item px-2">
+            <h3 className="text-[2.2rem] md:text-[3rem] font-extrabold mb-1 md:mb-2">
               <Counter target="50k+" />
             </h3>
-            <p className="text-[1.1rem] opacity-90">Beneficiaries</p>
+            <p className="text-[0.9rem] md:text-[1.1rem] opacity-90 leading-tight">Beneficiaries</p>
           </div>
-          <div className="stat-item">
-            <h3 className="text-[3rem] font-extrabold mb-2">
+          <div className="stat-item px-2">
+            <h3 className="text-[2.2rem] md:text-[3rem] font-extrabold mb-1 md:mb-2">
               <Counter target="30+" />
             </h3>
-            <p className="text-[1.1rem] opacity-90">Active Programs</p>
+            <p className="text-[0.9rem] md:text-[1.1rem] opacity-90 leading-tight">Active Programs</p>
           </div>
         </div>
       </div>
@@ -240,13 +234,13 @@ const LeadingNGOSection = () => {
             />
 
             {/* HOVER CURTAIN */}
-            <div className="absolute inset-0 flex items-end opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 transition-all duration-500 origin-bottom">
+            <div className="absolute inset-0 flex items-end opacity-100 lg:opacity-0 lg:scale-y-0 lg:group-hover:opacity-100 lg:group-hover:scale-y-100 transition-all duration-500 origin-bottom">
 
               {/* GRADIENT */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
 
               {/* TEXT */}
-              <p className="relative text-white text-sm md:text-base font-semibold p-4 leading-snug translate-y-6 group-hover:translate-y-0 transition duration-500">
+              <p className="relative text-white text-[0.75rem] sm:text-sm md:text-base font-semibold p-3 md:p-4 leading-snug translate-y-0 lg:translate-y-6 lg:group-hover:translate-y-0 transition duration-500">
                 {img.text}
               </p>
 

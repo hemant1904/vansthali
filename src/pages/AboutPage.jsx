@@ -61,13 +61,14 @@ const AboutPage = () => {
       >
         <div className="absolute inset-0 bg-black/60"></div>
 
-        <div className="relative text-center px-6 max-w-[900px]">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-center">
+        <div className="relative text-center px-4 md:px-6 max-w-[900px]">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight text-center">
             <span className="block">About us</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-200 max-w-[700px] mx-auto">
-            Shaping young minds and fostering independence through learning and opportunity          </p>
+          <p className="text-base md:text-xl text-gray-200 max-w-[700px] mx-auto px-2">
+            Shaping young minds and fostering independence through learning and opportunity
+          </p>
         </div>
       </div>
 
@@ -100,8 +101,8 @@ const AboutPage = () => {
               alt="Children learning"
               className="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-5 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
-              <p className="text-white text-sm md:text-base font-bold leading-tight drop-shadow-md">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-3 md:p-5 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 transform translate-y-0 lg:translate-y-2 lg:group-hover:translate-y-0">
+              <p className="text-white text-[0.7rem] sm:text-sm md:text-base font-bold leading-tight drop-shadow-md">
                 Nurturing young minds through early childhood education.
               </p>
             </div>
@@ -114,8 +115,8 @@ const AboutPage = () => {
               alt="Women training"
               className="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-5 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
-              <p className="text-white text-sm md:text-base font-bold leading-tight drop-shadow-md">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-3 md:p-5 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 transform translate-y-0 lg:translate-y-2 lg:group-hover:translate-y-0">
+              <p className="text-white text-[0.7rem] sm:text-sm md:text-base font-bold leading-tight drop-shadow-md">
                 Empowering semi-literate rural women as educators.
               </p>
             </div>
@@ -128,8 +129,8 @@ const AboutPage = () => {
               alt="Community engagement"
               className="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-5 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
-              <p className="text-white text-sm md:text-base font-bold leading-tight drop-shadow-md">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-3 md:p-5 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 transform translate-y-0 lg:translate-y-2 lg:group-hover:translate-y-0">
+              <p className="text-white text-[0.7rem] sm:text-sm md:text-base font-bold leading-tight drop-shadow-md">
                 Fostering community-led sustainable rural growth.
               </p>
             </div>
@@ -142,8 +143,8 @@ const AboutPage = () => {
               alt="Impact"
               className="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-5 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
-              <p className="text-white text-sm md:text-base font-bold leading-tight drop-shadow-md">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-3 md:p-5 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 transform translate-y-0 lg:translate-y-2 lg:group-hover:translate-y-0">
+              <p className="text-white text-[0.7rem] sm:text-sm md:text-base font-bold leading-tight drop-shadow-md">
                 Bridging educational gaps for over 40 years.
               </p>
             </div>
@@ -152,10 +153,10 @@ const AboutPage = () => {
         </div>
       </section>
       {/* IMPACT STATS */}
-      <section className="py-16 px-6">
-        <div className="bg-green-700 text-white rounded-xl max-w-[1200px] mx-auto py-12 px-8 shadow-md">
+      <section className="py-16 px-4 md:px-6">
+        <div className="bg-green-700 text-white rounded-xl max-w-[1200px] mx-auto py-10 md:py-12 px-4 md:px-8 shadow-md">
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-y-8 gap-x-4 text-center">
 
             {/* ITEM */}
             {[
@@ -167,12 +168,12 @@ const AboutPage = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center justify-center py-4"
+                className={`flex flex-col items-center justify-center py-2 ${i === 4 ? 'col-span-2 lg:col-span-1' : ''}`}
               >
-                <h3 className="text-4xl md:text-5xl font-extrabold tracking-tight">
+                <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight">
                   <Counter target={item.value} />
                 </h3>
-                <p className="text-sm mt-2 opacity-90 whitespace-nowrap">
+                <p className="text-xs md:text-sm mt-1 md:mt-2 opacity-90 whitespace-nowrap">
                   {item.label}
                 </p>
               </div>
@@ -327,7 +328,7 @@ const AboutPage = () => {
 
               <div className="relative group w-full max-w-[280px] mb-8">
                 {/* DECORATIVE FRAME */}
-                <div className="absolute -inset-4 bg-green-100 rounded-[2rem] transform rotate-3 group-hover:rotate-0 transition-transform duration-500"></div>
+                <div className="absolute -inset-2 md:-inset-4 bg-green-100 rounded-[2rem] transform rotate-1 md:rotate-3 group-hover:rotate-0 transition-transform duration-500"></div>
 
                 {/* IMAGE CONTAINER */}
                 <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/5] bg-gray-200">

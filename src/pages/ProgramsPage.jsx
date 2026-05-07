@@ -7,7 +7,7 @@ const ProgramCard = ({ title, description, items, image, icon: Icon, reverse }) 
   <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 items-center mb-32 group`}>
     {/* IMAGE FRAME */}
     <div className="w-full lg:w-1/2 relative">
-      <div className="absolute -inset-4 bg-green-100 rounded-3xl -rotate-2 group-hover:rotate-0 transition-transform duration-500 opacity-50"></div>
+      <div className="absolute -inset-2 md:-inset-4 bg-green-100 rounded-3xl -rotate-1 md:-rotate-2 group-hover:rotate-0 transition-transform duration-500 opacity-50"></div>
       <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
         <img
           src={image}
@@ -139,11 +139,11 @@ const ProgramsPage = () => {
         ></div>
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
         
-        <div className="relative text-center px-6 max-w-[900px] z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-center">
+        <div className="relative text-center px-4 md:px-6 max-w-[900px] z-10">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight text-center">
             Our Programs
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-[850px] mx-auto">
+          <p className="text-base md:text-xl text-gray-200 max-w-[850px] mx-auto px-2">
             Comprehensive initiatives designed to address the multifaceted challenges faced
             by rural communities across Maharashtra.
           </p>
